@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int add(int a, int b);
+int main()
+{
+    int abinterger = 3;
+    int sos;
+    printf("enter the input\n");
+    scanf("%d", &sos);
+    printf(" this was the upgraded input = %d\n", sos + 3);
+    printf("the size of taken by short int is %d\n", abinterger > 2 ? sizeof(short int) : abinterger);
 
-    short int interger = 4;
-    
-   
-
-    printf("the size of taken by short int is %d\n", sizeof(short int));
-    
-    
+    printf("The final value is %d.", add(5, 4));
     return 0;
-    // we are testing
+}
+int add(int a, int b)
+{
+    return a * b;
 }
